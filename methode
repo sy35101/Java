@@ -1,0 +1,22 @@
+package Array;
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+      int result= Add(4,5);
+      System.out.println(result);
+    }
+
+      
+      
+       static int Add(int a, int b)   // make changes in the  function static or non static
+      {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the two number");
+         a = sc.nextInt();
+         b = sc.nextInt();
+        int  c=a+b;
+        return c;
+}
+}
+//*** Remember that static methods are accessible without creating an object, but non-static methods require an instance of the class to be called. If you need to call a method without creating an instance, you can make the method static. If the method relies on instance-specific data or behavior, it should be non-static. Choose the appropriate method type based on your use case. ****//
