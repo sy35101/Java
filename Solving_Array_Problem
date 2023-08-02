@@ -1,0 +1,20 @@
+package Array;
+
+public class Maxelement {
+    public static void main(String[] args) {
+       int[] ele = new int[]{ 2,3,4,5,7,8};
+       int tar = ele[0];
+       Max(tar, ele);
+
+    }
+    static void Max(int tar, int[] ele)   // in the argument int[]ele accept array value and not the single value.
+    {
+        for (int i = 1; i < ele.length; i++) {
+            if(tar < ele[i])
+            {
+               tar = ele[i];
+            }
+        }
+        System.out.println("the largest elemet is arrary is " +tar);
+    }
+}
